@@ -1,9 +1,6 @@
-HIKEY_KERNEL_DIR=hikey-linaro
+. ${ROOT_DIR}/${KERNEL_DIR}/build.config.common
+. ${ROOT_DIR}/${KERNEL_DIR}/build.config.aarch64
 
-. ${ROOT_DIR}/${HIKEY_KERNEL_DIR}/build.config.common
-. ${ROOT_DIR}/${HIKEY_KERNEL_DIR}/build.config.aarch64
-
-KERNEL_DIR=${HIKEY_KERNEL_DIR}
 BRANCH=android-hikey-linaro-4.14
 DEFCONFIG=hikey_defconfig
 
