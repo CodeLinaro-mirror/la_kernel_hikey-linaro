@@ -1069,7 +1069,6 @@ static enum drm_mode_status dsi_encoder_phy_mode_valid(
 	    (mode->hdisplay == 1280 && mode->vdisplay == 720  && mode->clock == 74440)  ||
 	    (mode->hdisplay == 1280 && mode->vdisplay == 720  && mode->clock == 74250)  ||
 	    (mode->hdisplay == 1024 && mode->vdisplay == 768  && mode->clock == 78800)  ||
-	    (mode->hdisplay == 1024 && mode->vdisplay == 768  && mode->clock == 75000)  ||
 	    (mode->hdisplay == 1024 && mode->vdisplay == 768  && mode->clock == 81833)  ||
 	    (mode->hdisplay == 1024 && mode->vdisplay == 600  && mode->clock == 50250)  ||
 	    (mode->hdisplay == 800  && mode->vdisplay == 600  && mode->clock == 48907)  ||
