@@ -337,7 +337,7 @@ static void sugov_get_util(struct sugov_cpu *sg_cpu)
 
 	trace_android_vh_sugov_get_util(sg_cpu->cpu, &ret);
 	if (ret)
-		return ret;
+		return;
 
 	sg_cpu->max = max;
 	sg_cpu->bw_dl = cpu_bw_dl(rq);
