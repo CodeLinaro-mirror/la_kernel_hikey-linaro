@@ -1311,6 +1311,10 @@ static int shmem_unuse_inode(struct inode *inode, unsigned int type,
 			}
 		}
 
+		if (signal_pending(current)) {
+			ret = -ERESTARTSYS;
+			break;
+		}
 		start = indices[pvec.nr - 1];
 	} while (true);
 
